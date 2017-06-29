@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700" rel="stylesheet">
+    <title>Mystery Blanks</title>
+  </head>
+  <body>
+    <header>
+
+      <div id="guess_counter">
+        {{{guessCounter}}}
+      </div>
+    </header>
+    <div id="game_wrapper">
+      <div class="blanks">
+        {{{blankWord}}}
+      </div>
+      <form action="/game" method="post">
+        <input type="text"  name="letterGuess" placeholder="Please enter a letter">
+      </form>
+      <div id="letter_bank">
+        {{letter_bank}}
+      </div>
+    </div>
+  </body>
+</html>

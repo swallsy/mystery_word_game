@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="start.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700" rel="stylesheet">
     <title>Mystery Blanks</title>
   </head>
   <body>
-    <h1>Mystery Words</h1>
-    <div class="blanks">
-      {{{blankWord}}}
+    <div id="wrapper">
+      <div class="typewriter">
+        <h1><span>Mystery</span> Words</h1>
+      </div>
+      <div id="mode_selector">
+        <h2>Select difficulty</h2>
+        <button type="button">Easy</button>
+        <button type="button">Medium</button>
+        <button type="button">Hard</button>
+      </div>
     </div>
-
-    <input type="text"  name="guess_input" placeholder="Please enter a letter">
 
   </body>
 </html>
