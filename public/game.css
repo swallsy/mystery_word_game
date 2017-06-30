@@ -10,7 +10,6 @@ body {
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
-  text-transform: lowercase;
   font-size: 60px;
 }
 
@@ -19,32 +18,63 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  font-size: 60px;
 }
 
 form {
   text-align: center;
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 input {
-  height: 40px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 60px;
+  text-align: center;
+  align-self: center;
+  margin-top: 20px;
+  border:none;
+  outline: none;
+}
+
+input:focus {
+  outline: none;
 }
 
 #letter_bank {
   text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 160px;
+  background-color: #f98366;
+  color: white;
+}
+
+.guessedLetter {
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
 }
 
 .guessed {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: black;
+  background-color: #f98366;
   margin-left: 5px;
   margin-right: 5px;
 }
 #game_wrapper {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -66,7 +96,10 @@ header {
 #guess_counter {
   display: flex;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
+  justify-content: center;
 }
 
 #guess_counter:first-child {
@@ -80,4 +113,79 @@ header {
   height: 20px;
   margin-left: 10px;
   margin-right: 10px;
+  text-align: center;
+}
+
+.msg {
+  color: #f98366;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+@keyframes fade-out {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fade-out {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+
+@keyframes fade-in {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+.word_reveal {
+  text-align: center;
+  font-size: 50px;
+}
+.end_message {
+  animation-name: fade-out;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  font-size: 80px;
+  font-weight:600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+a {
+  border: 1px solid white;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  color: rgba(255, 255, 255, .8);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+}
+
+a:visited {
+  color: rgba(255, 255, 255, .8);
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.end_of_game_wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.word_reveal {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }

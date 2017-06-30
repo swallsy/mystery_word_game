@@ -4,7 +4,7 @@ body {
   padding: 0;
   position: relative;
   height: 100vh;
-  background-color: #4286f4;
+  background-color: #f98366;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -16,8 +16,19 @@ body {
   color: white;
 }
 
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 #mode_selector {
   text-align: center;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  margin-top: 20px;
 }
 
 h1 {
@@ -27,13 +38,37 @@ h1 {
   font-size: 60px;
 }
 
+h2 {
+  font-weight: normal;
+  padding-bottom: 30px;
+}
+
+a {
+  border: 1px solid white;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100px;
+  color: rgba(255, 255, 255, .8);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgba(255, 255, 255, .8);
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
 span {
   color:  rgba(255, 255, 255, 0.8);
 }
 
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .18em solid white; /* The typwriter cursor */
+  border-right: .10em solid white; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
