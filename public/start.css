@@ -65,6 +65,7 @@ a:hover {
 span {
   color:  rgba(255, 255, 255, 0.8);
 }
+/* Typewriter effect code written by:  Geoff Graham, https://css-tricks.com/snippets/css/typewriter-effect/ */
 
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
