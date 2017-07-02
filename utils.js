@@ -15,11 +15,11 @@ exports.msg = '';
 
 exports.sortWords = function (words) {
   for (i = 0; i < words.length; i++) {
-    if (words[i].length < 6) {
+    if (words[i].length > 4 && words[i].length < 8) {
         exports.easyWords.push(words[i]);
-    } else if (words[i].length > 5 && words[i].length < 8) {
+    } else if (words[i].length > 8 && words[i].length < 12) {
         exports.mediumWords.push(words[i]);
-    } else if (words[i].length > 8 && words[i].length < 13){
+    } else if (words[i].length > 12 && words[i].length < 14){
         exports.hardWords.push(words[i]);
       }
   }

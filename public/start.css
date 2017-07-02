@@ -4,9 +4,21 @@ body {
   padding: 0;
   position: relative;
   height: 100vh;
-  background-color: #f98366;
   font-family: 'Montserrat', sans-serif;
+  /*-webkit-animation: background 40s cubic-bezier(1,0,0,1) infinite;*/
+  animation: background 40s cubic-bezier(.8,0,0,.2) infinite;
 }
+
+
+@keyframes background {
+  0% { background-color: #f98366; }
+  20% { background-color: #cdd628; }
+  40% { background-color: #3dff9e; }
+  60% { background-color: #4286f4; }
+  80% {background-color: #c134ac; }
+  100% { background-color: #f98366; }
+}
+
 
 #wrapper {
   position: absolute;

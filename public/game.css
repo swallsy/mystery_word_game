@@ -13,6 +13,11 @@ h1 {
   font-size: 60px;
 }
 
+h3 {
+  font-weight: normal;
+  font-size: 20px;
+}
+
 .blanks {
   display: flex;
   margin-left: auto;
@@ -32,7 +37,7 @@ input {
   width: 80px;
   height: 80px;
   line-height: 80px;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   align-self: center;
   margin-top: 20px;
@@ -50,14 +55,27 @@ input:focus {
   padding-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  width: 400px;
-  height: 160px;
+  width: 500px;
+  height: 200px;
   background-color: #f98366;
   color: white;
+  animation: background 40s cubic-bezier(.8,0,0,.2) infinite;
 }
+
+
+@keyframes background {
+  0% { background-color: #f98366; }
+  20% { background-color: #cdd628; }
+  40% { background-color: #3dff9e; }
+  60% { background-color: #4286f4; }
+  80% {background-color: #c134ac; }
+  100% { background-color: #f98366; }
+}
+
 
 .guessedLetter {
   display: inline-block;
+  font-weight: normal;
   font-size: 20px;
   padding-left: 5px;
   padding-right: 5px;
@@ -71,7 +89,9 @@ input:focus {
   background-color: #f98366;
   margin-left: 5px;
   margin-right: 5px;
+  animation: background 40s cubic-bezier(.8,0,0,.2) infinite;
 }
+
 #game_wrapper {
   position: absolute;
   top: 50%;
@@ -188,4 +208,8 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.end_background {
+  animation: background 40s cubic-bezier(.8,0,0,.2) infinite;
 }
