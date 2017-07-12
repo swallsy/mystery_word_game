@@ -25,6 +25,7 @@ app.use(session({
   saveUninitialized: true
 }))
 
+var ssn;
 
 app.set('port', (process.env.PORT || 5000));
 app.listen(app.get('port'), function() {

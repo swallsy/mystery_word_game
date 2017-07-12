@@ -3,26 +3,7 @@ const router = express.Router();
 const mustacheExpress = require('mustache-express');
 const utils = require('./utils.js');
 
-router.get('/start', function(req, res){
-  // ssn = req.session;
-
-  // ssn.diff = "";
-  // ssn.mysteryWord = "";
-  // ssn.blanks = [];
-  // ssn.letter_bank = [];
-  // ssn.guess_counter = [];
-  // ssn.easyWords = [];
-  // ssn.mediumWords = [];
-  // ssn.hardWords = [];
-  // ssn.msg = '';
-  //
-  // req.session.destroy(function(err) {
-  //   if(err) {
-  //     console.log(err);
-  //   } else {
-  //     res.redirect('/');
-  //   }
-  // });
+router.get('/start', function(req, res){  
   utils.init();
   res.render('')
 })
