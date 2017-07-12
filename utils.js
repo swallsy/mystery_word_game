@@ -1,5 +1,5 @@
 const fs = require('file-system');
-const words = fs.readFileSync("/usr/share/dict/words", "utf-8").toLowerCase().split("\n");
+const words = fs.readFileSync("dict.txt", "utf-8").toLowerCase().split("\n");
 var exports = module.exports = {};
 // var ssn = {};
 
