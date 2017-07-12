@@ -6,7 +6,7 @@ const session = require('express-session');
 const mustacheExpress = require('mustache-express');
 const fs = require('file-system');
 const app = express();
-const words = fs.readFileSync("/usr/share/dict/words", "utf-8").toLowerCase().split("\n");
+const words = fs.readFileSync("dict.txt", "utf-8").toLowerCase().split("\n");
 const routes = require('./routes.js');
 const utils = require('./utils.js');
 
