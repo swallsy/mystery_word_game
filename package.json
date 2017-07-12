@@ -2,9 +2,9 @@
   "name": "mystery_word",
   "version": "1.0.0",
   "description": "",
-  "main": "express-app.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node express-app.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
