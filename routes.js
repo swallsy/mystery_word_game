@@ -3,7 +3,11 @@ const router = express.Router();
 const mustacheExpress = require('mustache-express');
 const utils = require('./utils.js');
 
-router.get('/start', function(req, res){  
+router.get('/', function(req, res) {
+  res.redirect('/start');
+})
+
+router.get('/start', function(req, res){
   utils.init();
   res.render('')
 })
